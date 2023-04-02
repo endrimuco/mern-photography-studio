@@ -1,0 +1,188 @@
+/* +======+ Google Fonts +======+ */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+/* +======+ Variables CSS +======+ */
+:root{
+    /* +======+ Font and Typography +======+ */
+    --nav-font: 'Alata', sans-serif;
+    --body-font: 'Josefin Sans', sans-serif; 
+
+    /* +======+ Font weight +======+ */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* +======+ Colors +======+ */
+    --nav-color: #111D0B;
+    --text-color: #FFFBFC;
+    --first-color-light: #e7e3e8;
+    --first-color-lighten: #fff9f9;
+    --first-color-green: #6bd425;
+}
+
+/* +================================+ Admin Dashboard -start- +================================+ */
+
+.adminContainer{
+    display: inline-flex;
+    border: 1px solid var(--first-color-green);
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background-color: var(--nav-color);
+}
+
+
+.adminLeftSideBar{
+    border-right: 1px solid var(--first-color-green);
+    width: 15%;
+    height: 100%;
+}
+
+.adminTopSideBar{
+    border-bottom: 1px solid var(--first-color-green);
+    text-align: center;
+    width: 100%;
+}
+
+.adminMainBar{
+    color: var(--text-color);
+    width: 100%;
+    height: 100%;
+}
+
+.adminWelcomeTitle{
+   font-family: var(--body-font);
+   color: var(--text-color);
+   font-size: 2rem;
+   margin-top: 15px;
+}
+
+.adminAccountStats{
+   text-align: center;
+   border-bottom: 1px solid var(--first-color-green);
+}
+
+.adminIconUser{
+    color: var(--first-color-green);
+    font-size: 5rem;
+    margin: auto;
+}
+
+.adminAccountTitle{
+    font-size: 1.4rem;
+    font-family: var(--body-font);
+    color: var(--text-color);
+}
+
+.adminAccount{
+    font-family: var(--nav-font);
+    color: var(--text-color);
+}
+
+.adminButtons{
+    display: inline-flex;
+    width: 100%;
+    font-family: var(--nav-font);
+    text-align: center;
+    border-bottom: 1px solid var(--first-color-green);
+}
+
+.adminBtn{
+    width: 100%;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 10px;
+}
+
+.adminBtn:hover{
+    border-left: 4px solid var(--first-color-green);
+    border-right: 4px solid var(--first-color-green);
+    background-color: #6bd4251c;
+    transition: .3s;
+    color: var(--text-color);
+}
+
+.createPhotoContainer{
+    width: 100%;
+}
+
+.createPhotoForm{
+    display: inline-flex;
+    width: 100%;
+    text-align: center;
+    font-family: var(--nav-font);
+    padding: 5px;
+}
+
+.createPhotoImageDiv{
+    width: 60%;
+}
+
+.createPhotoFormInputs{
+   width: 40%;
+}
+
+.createPhotoInputStyle{
+   width: 100%;
+   padding: 10px;
+}
+
+.createPhotoInputDes{
+   width: 100%;
+}
+
+.createPhotoFormTitles {
+    background-color: #6bd42550;
+    padding: 5px;
+}
+
+.createPhotoInput{
+   text-align: center;
+   width: 100%;
+   background-color: transparent;
+   border-right: none;
+   border-left: none;
+   border-top: none;
+   border-bottom: 1px solid var(--first-color-green);
+   color: var(--text-color);
+}
+
+.createPhotoInputCat{
+    background-color: #6bd42553;
+}
+
+.createPhotoInputCat::backdrop{
+    background-color: #6bd42515;
+}
+
+.createPhotoAddBtn{
+   color: var(--text-color);
+   background-color: transparent;
+   border: 1px solid var(--first-color-green);
+   border-radius: 5px;
+   margin-top: 15px;
+   padding: 5px;
+   width: 95%;
+}
+
+.createPhotoImage{
+   padding: 40px;
+   width: 95%;
+}
+
+.createPhotoAddBtn:hover{
+   background-color: #6bd4257a;
+}
+
+.createPhotoCol{
+    width: 50%;
+}
+
+.createPhotoRow{
+    display: inline-flex;
+}
+
+
+
+/* +================================+ Admin Dashboard -end- +================================+ */
