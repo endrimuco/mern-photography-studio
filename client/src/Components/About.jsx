@@ -67,7 +67,7 @@ const About = () => {
 
           <div className='statsCard'>
 
-            <i class="ri-building-line statsIcons"></i>
+            <i className="ri-building-line statsIcons"></i>
 
             <div className='statsCardTitle'>
               +8 Years
@@ -77,7 +77,7 @@ const About = () => {
 
           <div className='statsCard'>
 
-            <i class="ri-user-line statsIcons"></i>
+            <i className="ri-user-line statsIcons"></i>
 
             <div className='statsCardTitle'>
               +5600 Happy clients
@@ -87,7 +87,7 @@ const About = () => {
 
           <div className='statsCard'>
 
-            <i class="ri-medal-line statsIcons"></i>
+            <i className="ri-medal-line statsIcons"></i>
 
             <div className='statsCardTitle'>
               +35 Awards
@@ -97,7 +97,7 @@ const About = () => {
 
           <div className='statsCard'>
 
-            <i class="ri-gallery-line statsIcons"></i>
+            <i className="ri-gallery-line statsIcons"></i>
 
             <div className='statsCardTitle'>
               +39000 Pictures taken

@@ -103,6 +103,26 @@
     color: var(--text-color);
 }
 
+.adminUpdateBtn{
+    padding: 6px;
+    margin: 2px;
+    border: 2px solid #ffa600;
+    background-color: #e0930573;
+    color: #e09405;
+}
+
+.adminDeleteBtn{
+    padding: 5px 5px 3.1px;
+    margin: 2px;
+    border: 2px solid #c91919;
+    background-color: #c919196a;
+    color: #9b2929;
+}
+
+.adminUDBtns{
+    padding: 5px;
+}
+
 .createPhotoContainer{
     width: 100%;
 }
@@ -183,6 +203,156 @@
     display: inline-flex;
 }
 
-
-
 /* +================================+ Admin Dashboard -end- +================================+ */
+
+/* +======+ MEDIA QUERIES - START - +======+ */
+
+/* -v- Mobile Version -v- */
+@media screen and (max-width: 767px) {
+
+    .adminContainer{
+        display: inline-block;
+    }
+    
+    .adminLeftSideBar{
+        width: 100%;
+    }
+    
+    .adminWelcomeTitle{
+       font-size: 1.7rem;
+    } 
+
+    /* ------ CreatePhoto Component Style ---start--- */
+
+    .createPhotoForm{
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .createPhotoImageDiv{
+        width: 100%;
+    }
+    
+    .createPhotoFormInputs{
+       width: 100%;
+    }
+    
+    .createPhotoCol{
+        width: 100%;
+    }
+    
+    .createPhotoRow{
+        width: 100%;
+        display: inline-block;
+    }
+
+    /* ------ CreatePhoto Component Style ---end--- */
+
+  }
+
+  /* -v- Tablet Version -v- */
+  @media screen and (min-width: 768px){
+
+    .adminContainer{
+        display: inline-block;
+    }
+    
+    .adminLeftSideBar{
+        width: 100%;
+    }
+    
+    .adminWelcomeTitle{
+       font-size: 1.9rem;
+    } 
+
+    /* ------ CreatePhoto Component Style ---start--- */
+
+    .createPhotoForm{
+        display: inline-block;
+        padding: 5px;
+    }
+
+    .createPhotoImageDiv{
+        width: 100%;
+    }
+    
+    .createPhotoFormInputs{
+       width: 100%;
+    }
+    
+    .createPhotoCol{
+        width: 100%;
+    }
+    
+    .createPhotoRow{
+        width: 100%;
+        display: inline-block;
+    }
+
+    /* ------ CreatePhoto Component Style ---end--- */
+
+
+   }
+
+
+  /* -v- --- Laptop Version --- -v- */
+  @media screen and (min-width: 1024px) {
+    
+    .adminContainer{
+        display: inline-flex;
+    }
+    
+    .adminLeftSideBar{
+        width: 20%;
+    }
+    
+    .adminWelcomeTitle{
+       font-size: 2rem;
+    } 
+
+    /* ------ CreatePhoto Component Style ---start--- */
+
+    .createPhotoForm{
+        display: inline-flex;
+        padding: 5px;
+    }
+
+    .createPhotoImageDiv{
+        width: 60%;
+    }
+    
+    .createPhotoFormInputs{
+       width: 55%;
+    }
+    
+    .createPhotoCol{
+        width: 100%;
+    }
+    
+    .createPhotoRow{
+        width: 100%;
+        display: inline-flex;
+    }
+
+    /* ------ CreatePhoto Component Style ---end--- */
+
+  }
+
+  /* -v- Desktop Version -v- */
+  @media screen and (min-width: 1440px) {
+    
+    .adminContainer{
+        display: inline-flex;
+    }
+    
+    .adminLeftSideBar{
+        width:15%;
+    }
+    
+    .adminWelcomeTitle{
+       font-size: 2.5rem;
+    } 
+
+  }
+
+/* +======+ MEDIA QUERIES - END - +======+ */

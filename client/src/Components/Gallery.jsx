@@ -78,20 +78,20 @@ const Gallery = () => {
         {photoss.map((photo, index) => {
           return (
             <Col xs={12} md={4} key={index}>
-              <div class="photoCard" style={{backgroundImage: `url(${photo.imageUrl})`}}>
-                <div class="photoCardInfo">
+              <div className="photoCard" style={{backgroundImage: `url(${photo.imageUrl})`}}>
+                <div className="photoCardInfo">
                 <div className="photoCardInfoTitle">{photo.title}</div>
                 <div className="photoCardInfoDes">{photo.description}</div>
                 </div>
-                <div class="photoCardUtilityInfo">
-                    <ul class="photoCardUtilityList">
-                      <li><i class="ri-image-line photoCardIcons"></i>{photo.category}</li>
-                      <li><i class="ri-calendar-event-line photoCardIcons"></i>{photo.dateofphoto}</li>
-                      <li><i class="ri-map-pin-fill photoCardIcons"></i>{photo.locationphoto}</li>
+                <div className="photoCardUtilityInfo">
+                    <ul className="photoCardUtilityList">
+                      <li><i className="ri-image-line photoCardIcons"></i>{photo.category}</li>
+                      <li><i className="ri-calendar-event-line photoCardIcons"></i>{photo.dateofphoto}</li>
+                      <li><i className="ri-map-pin-fill photoCardIcons"></i>{photo.locationphoto}</li>
                     </ul>
                   </div>
-                <div class="photoCardGradientOverlay"></div>
-                <div class="photoCardColorOverlay"></div>
+                <div className="photoCardGradientOverlay"></div>
+                <div className="photoCardColorOverlay"></div>
               </div>
             </Col>
 
