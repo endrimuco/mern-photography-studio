@@ -1,0 +1,1975 @@
+/* +======+ Google Fonts +======+ */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
+
+/* +======+ Variables CSS +======+ */
+:root{
+    /* +======+ Font and Typography +======+ */
+    --nav-font: 'Alata', sans-serif;
+    --body-font: 'Josefin Sans', sans-serif; 
+
+    /* +======+ Font weight +======+ */
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    /* +======+ Colors +======+ */
+    --nav-color: #111D0B;
+    --text-color: #FFFBFC;
+    --first-color-light: #e7e3e8;
+    --first-color-lighten: #fff9f9;
+    --first-color-green: #6bd425;
+}
+
+.Testing{
+   font-family: var(--body-font);
+   font-size: 30px;
+   background-color: black;
+   color: var(--text-color);  
+}
+
+.BBred{
+    border: 2px solid red;
+}
+
+/* +================================+ Navbar Section -start- +================================+ */
+.navbarDiv {
+    font-family: 'Alata', sans-serif;
+    background-color: var(--nav-color);
+    padding: 3px;
+    width: 100%;
+}
+
+.navBarLogo{
+   margin-left: -50px;
+}
+
+.navBarList{
+    width: 80%;
+    height: 70px;
+}
+
+.navBarLinkList{
+    align-items: center;
+    width: 70%;
+    height: 60px;
+}
+
+.navBtn{
+    position: relative;
+    display: inline-block;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    letter-spacing: .1em;
+    text-decoration: none;
+    padding: 10px 30px;
+    transition: .5s;
+    transition-delay: .8s;
+}
+
+.navCelNumber{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: var(--body-font);
+}
+
+.navCelNumber:hover{
+    color: var(--first-color-green);
+}
+
+.navBtn:hover{
+    color: var(--first-color-green);
+    letter-spacing: .25em;
+    text-shadow: 0 0 5px var(--first-color-green);
+    transition-delay: 1ms;
+}
+
+.navBtn .navBtnSpan{
+    position: absolute;
+    display: block;
+    background: var(--first-color-green);
+}
+
+.navBtn .navBtnSpan:nth-child(1) {
+    left: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(1) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.navBtn .navBtnSpan:nth-child(2) {
+    right: 0;
+    top: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(2) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navBtn .navBtnSpan:nth-child(3) {
+    right: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(3) {
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+.navBtn .navBtnSpan:nth-child(4) {
+    left: 0;
+    top: 0;
+    width: 1.5px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .4s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(4) {
+    transform: scaleX(1);
+    transform-origin: top;
+}
+
+.navBtn .navBtnSpan:nth-child(5) {
+    left: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(5) {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navBtn .navBtnSpan:nth-child(6) {
+    right: 0;
+    bottom: 0;
+    width: 50.5%;
+    height: 1.5px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .5s;
+    transition-delay: .8s;
+}
+
+.navBtn:hover .navBtnSpan:nth-child(6) {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 30 30%27%3e%3cpath stroke=%27rgba%28107, 212, 37, 1%29%27 stroke-linecap=%27round%27 stroke-miterlimit=%2710%27 stroke-width=%272%27 d=%27M4 7h22M4 15h22M4 23h22%27/%3e%3c/svg%3e") !important;
+  }
+
+.navbar-toggler{
+    color: var(--first-color-green) !important;
+}
+
+/* +================================+ Navbar Section -end- +================================+ */
+
+
+/* +================================+ Home Section -start- +================================+ */
+ .homeBackground{
+    background-image: url("../images/healthbackground3.jpg");
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+ }
+
+ .homeContainer{
+    padding-top: 150px;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+ }
+
+ .homeGap{
+    height: 50px;
+    width: 50px;
+ }
+
+ .homeTitle{
+    font-family: var(--body-font);
+    width: 60%;
+    margin: auto;
+    text-transform: uppercase;
+    background-color: #111d0baa;
+    border-radius: 3px;
+    border-top: 4px solid var(--first-color-green);
+    border-bottom: 4px solid var(--first-color-green);
+ }
+
+ .homeNameTitle{
+    font-size: 5.5rem;
+    color: var(--first-color-green);
+ }
+
+ .homeSubtitle{
+    font-size: 2.5rem;
+    color: var(--text-color);
+ }
+
+ .homeDescription{
+    font-family: var(--nav-font);
+    font-weight: var(--font-semi-bold);
+    font-size: 1.1rem;
+    color: var(--text-color);
+    background-color: #111d0baa;
+    border-right: 4px solid var(--first-color-green);
+    border-left: 4px solid var(--first-color-green);
+    width: 450px;
+    padding: 10px;
+    margin: auto;
+ }
+
+ /* +======================+ Welcome Page -start- +======================+ */
+ .welcomeBackground{
+    background: var(--nav-color);
+    height: 100vh;
+    width: 100%;
+ }
+
+ .welcomeContainer{
+    width: 70%;
+    margin: auto;
+    padding-top: 240px;
+    color: var(--text-color);
+ }
+
+ .welcomeColorLine{
+    width: 15%;
+    margin: auto;
+    border: 2px solid var(--first-color-green);
+    border-radius: 2px;
+ }
+
+ .welcomeTitle{
+    width: 100%;
+    padding: 10px;
+    font-size: 4.2rem;
+    font-family: var(--body-font);
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+ }
+
+ .welcomeDescription{
+    width: 100%;
+ }
+
+ .welcomeDescriptionInfo{
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin: auto;
+    font-family: var(--nav-font);
+    text-align: center;
+ }
+
+ .welcomeButton{
+    padding: 50px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+ }
+
+ .welcomeReadMore{
+    margin: auto;
+    padding: 10px 50px 10px 50px;
+    text-decoration: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    font-family: var(--nav-font);
+    font-size: 1.4rem;
+ }
+
+ .welcomeReadMore:hover{
+    border: 1px solid var(--first-color-green);
+    color: var(--first-color-green);
+    box-shadow: var(--first-color-green) 0px 0px 5px 0px;
+ }
+ /* +======================+ Welcome Page -end- +======================+ */
+
+ /* +======================+ Gallery Page -start- +======================+ */
+  .galleryContainer{
+    width: 100%;
+    height: auto;
+  }
+
+  .galleryColumnOne {
+   width: 100%;
+   display: inline-flex;
+  }
+
+  .galleryColumnTwo{
+   width: 100%;
+   display: inline-flex;
+  }
+
+  .galleryTitles{
+   border-top: 6px solid var(--first-color-green);
+   border-bottom: 6px solid var(--first-color-green);
+   border-radius: 5px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   width: 50%;
+   margin: auto;
+   background-color: #111d0b81;
+  }
+
+  .galleryCard{
+   text-decoration: none;
+   text-align: center;
+   padding-top: 120px;
+   font-size: 4rem;
+   text-transform: uppercase;
+   font-weight: var(--font-bold);
+   font-family: var(--body-font);
+   color: var(--text-color);
+   width: 100%;
+   height: 500px;
+  }
+
+  .galleryCard:hover{
+   opacity: .9;
+   color: var(--first-color-lighten);
+   border: 2px solid var(--first-color-green);
+   font-size: 4.3rem;
+  }
+
+  .galleryCardOne{
+   background-image: url('../images/catalogshoot.jpg');
+   background-size: cover;
+   }
+
+  .galleryCardTwo{
+   background-image: url('../images/fourseasons.jpg');
+   background-size: cover;
+  }
+
+  .galleryCardThree{
+   background-image: url('../images/healthbackground4.jpg');
+   background-size: cover;
+  }
+
+  .galleryCardFour{
+   background-image: url('../images/weddingalbum.jpg');
+   background-size: cover;
+  }
+
+ /* +======================+ Gallery Page -end- +======================+ */
+
+ /* +======================+ Contact Page -start- +======================+ */
+  .contactContainer{
+   width: 100%;
+   padding: 65px;
+   height: auto;
+   background: var(--nav-color);
+  } 
+
+ /* +======================+ Contact Page -end- +======================+ */
+
+/* +================================+ Home Section -end- +================================+ */
+
+
+/* +================================+ About Section -start- +================================+ */
+  .aboutContainer{
+   width: 100%;
+   height: auto;
+   background: var(--nav-color);
+  }
+
+  .aboutTitle{
+   padding-top: 40px;
+  }
+
+  .aboutLine{
+   border: 2px solid var(--first-color-green);
+   border-radius: 1px;
+   width: 10%;
+   margin: auto;
+  }
+
+  .aboutNameTitle{
+   font-family: var(--body-font);
+   color: var(--text-color);
+   text-transform: uppercase;
+   font-size: 4.5rem;
+   width: 100%;
+   text-align: center;
+   margin: auto;
+  }
+
+   /* +======================+ About First Page -start- +======================+ */
+
+  .aboutDescription{
+   display: inline-flex;
+  }
+
+  .aboutImageOne{
+   width: 35%;
+   border-radius: 20px;
+   margin-left: 10%;
+   box-shadow: var(--first-color-green) 0px 1px 5px 1px;
+  }
+
+  .aboutDescriptionInfo{
+   width: 50%;
+   font-family: var(--nav-font);
+   font-size: 1.3rem;
+   color: var(--text-color);
+   padding-top: 20px;
+   margin-top: 1%;
+   padding-left: 30px;
+  }
+
+  /* +======================+ About First Page -end- +======================+ */
+
+  /* +======================+ About Second Page: Statistics -start- +======================+ */
+
+  .statsContainer{
+   background-color: var(--nav-color);
+   width: 100%;
+   height: auto;
+   padding-top: 50px;
+   padding-bottom: 50px;
+  }
+
+  .statsList{
+   display: inline-flex;
+   padding-top: 5%;
+   width: 100%;
+  }
+
+  .statsCard{
+   width: 25%;
+   height: 40%;
+   background: #ffffff25;
+   border-radius: 50px;
+   text-align: center;
+   font-family: var(--nav-font);
+   color: var(--first-color-light);
+   margin: 20px;
+   box-shadow: var(--first-color-green) 0px 1px 5px 1px;
+  }
+
+  .statsIcons{
+   font-size: 6rem;
+  }
+
+  .statsCardTitle{
+   width: 100%;
+   font-size: 1.7rem;
+   font-weight: var(--font-semi-bold);
+   padding-bottom: 10%;
+  }
+
+  /* +======================+ About Second Page: Statistics -end- +======================+ */
+
+  /* +======================+ About Third Page: Equipments -start- +======================+ */
+  .equipmentsContainer{
+   background-color: var(--nav-color);
+   width: 100%;
+   height: auto;
+   padding-bottom: 20px;
+  }
+
+  .equipmentsImageDiv{
+   width: 100%;
+   padding: 1%;
+   text-align: center;
+  }
+
+  .equipmentsImageOne{
+   width: 40%;
+   border-radius: 20px;
+   box-shadow: var(--first-color-green) 0px 1px 5px 1px;
+  }
+
+  .equipmentsDescription{
+   width: 100%;
+   height: auto;
+  }
+
+  .equipmentsDescriptionInfo{
+   width: 65%;
+   margin: auto;
+   padding: 20px;
+   font-family: var(--nav-font);
+   color: var(--text-color);
+   font-size: 1.2rem;
+  }
+
+  .equipmentsDescriptionInfo li{
+   padding: 20px;
+  }
+
+  .equipmentsDescriptionInfo li span{
+   color: var(--first-color-green);
+  }
+
+  .equipmentsTools{
+   width: 100%;
+   height: auto;
+   display: inline-flex;
+  }
+
+  .equipmentsTool{
+   width: 35%;
+  }
+
+  .equipmentsNameTool{
+   font-family: var(--body-font);
+   font-weight: var(--font-semi-bold);
+   font-size: 1.6rem;
+   color: var(--text-color);
+   text-align: center;
+  }
+
+  .equipmentsNameToolInfo span{
+   color: var(--first-color-green);
+  }
+
+  .equipmentsImageTool{
+   width: 100%;
+   text-align: center;
+  }
+
+  .equipmentsToolImages{
+   width: 50%;
+   border-radius: 20px;
+  }
+
+  .equipmentsToolDescription{
+   width: 100%;
+   color: var(--text-color);
+   font-family: var(--nav-font);
+   font-size: 1rem;
+  }
+
+  .equipmentsToolDescriptionInfo{
+   width: 80%;
+   margin: auto;
+  }
+
+  .equipmentsToolDescriptionInfo li{
+   padding: 20px;
+  }
+
+  .equipmentsToolDescriptionInfo li span{
+   color: var(--first-color-green);
+  }
+
+  .equipmentsTool{
+   width: 100%;
+  }
+
+
+  /* +======================+ About Third Page: Equipments -end- +======================+ */
+
+
+/* +================================+ About Section -end- +================================+ */
+
+
+/* +================================+ Gallery Section -start- +================================+ */
+  .galleryMainContainer{
+   width: 100%;
+   height: auto;
+   padding-bottom: 50px;
+   background-color: var(--nav-color);
+  }
+
+  .galleryTitleContainer{
+   width: 100%;
+   height: 30vh;
+  }
+
+  .gallerySectionTitle{
+   width: 100%;
+   margin: auto;
+   text-align: center;
+  }
+
+  .gallerySectionTitleInfo{
+   font-family: var(--body-font);
+   font-size: 3rem;
+   color: var(--text-color);
+   padding: 50px;
+   letter-spacing: 3px;
+  }
+
+  .gallerySection{
+   width: 100%;
+   height: auto;
+  }
+
+  .gallerySpanDot{
+   font-family: var(--nav-font);
+   color: var(--first-color-green);
+   padding: 10px;
+  }
+
+  .gallerySectionNavBar{
+   text-align: center;
+   padding: 20px;
+  }
+
+  .gallerySectionList{
+   width: 93%;
+   padding: 25px;
+   height: auto;
+   margin: auto;
+   border: 1px solid var(--first-color-green);
+  }
+/* +================================+ Gallery Section -end- +================================+ */
+
+
+/* +================================+ Contact Section -start- +================================+ */
+  .contactContainerTwo{
+    width: 100%;
+    height: 100vh + 100%;
+    padding: 70px;
+    background-color: var(--nav-color);
+   }
+
+   .contactLine{
+    border: 3px solid var(--first-color-green);
+    border-radius: 1px;
+    width: 40%;
+    margin: auto;
+   }
+
+   .contactTitle{
+    font-family: var(--body-font);
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-size: 4.5rem;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+   }
+ 
+   .contactForm{
+      padding-top: 40px;
+      margin: auto;
+      width: 90%;
+   }
+
+   .contactFormList{
+      width: 80%;
+      margin: auto;
+   }
+
+   .contactFormInputs{
+      display: grid;
+   }
+
+   .contactFormInput{
+      border: none;
+      border-bottom: 2px solid var(--first-color-green);
+      border-radius: 1px;
+      text-align: center;
+      background: var(--nav-color);
+      width: 99%;
+      padding: 10px;
+      margin: auto;
+      color: var(--text-color);
+      margin-top: 45px;
+   }
+
+   .contactButton{
+      padding: 50px;
+      width: 100%;
+      text-align: center;
+      margin: auto;
+   }
+   
+   .contactFormButton{
+      background: var(--nav-color);
+      margin: auto;
+      padding: 10px 50px 10px 50px;
+      text-decoration: none;
+      border: 1px solid var(--text-color);
+      color: var(--text-color);
+      font-family: var(--nav-font);
+      font-size: 1.4rem;
+   }
+   
+   .contactFormButton:hover{
+      border: 1px solid var(--first-color-green);
+      color: var(--first-color-green);
+      box-shadow: var(--first-color-green) 0px 0px 5px 0px;
+   }
+  
+/* +================================+ Contact Section -end- +================================+ */
+
+/* +================================+ Login Section -end- +================================+ */
+   .loginContainer{
+      background-color: var(--nav-color);
+      width: 100%;
+      height: 100vh;
+   }
+
+   .loginCard{
+      width:250px;
+      height: auto;
+      margin: auto;
+      padding-top: 15%;
+      text-align: center;
+   }
+
+   .loginAvatar{
+      width: 100%;
+      margin: auto;
+      height: 100%;
+      position: relative;
+      font-family: var(--body-font);
+   }
+
+   .loginAvatar i {
+      font-family: var(--nav-font);
+      width: 80%;
+      padding: 5px;
+      font-size: 3rem;
+      color: var(--text-color);
+      border: 3px solid #fff;
+   }
+
+   .loginCard input {
+      border: none;
+      background: #fff;
+     font-family:Lato ;
+     font-weight:700 ;
+      display: block;
+      height: 40px;
+      outline: none;
+      width: 100%;
+      margin: auto;
+      padding: 6px 12px 6px 12px;
+      font-family: var(--body-font);
+   }
+   .inputLoginBar {
+      width: 100%;
+      height: 1px;
+      background: #fff ;
+   }
+   .inputLoginBar i {
+      width: 95%;
+      margin: auto;
+      height: 1px ;
+      display: block;
+      background: #d1d1d1;
+   }
+   
+   .loginCard button {
+      width: 100%;
+      background: var(--first-color-green);
+      text-decoration: center;
+      border: none;
+      color: var(--nav-color);
+      padding-top: 14px;
+      padding-bottom: 14px;
+      outline: none;
+      font-size: 13px;	
+      border-bottom: 3px solid #307d63;
+      cursor: pointer;
+      font-family: var(--nav-font);
+   }
+
+/* +================================+ Login Section -end- +================================+ */
+
+
+/* +================================+ Photo Card Style -start- +================================+ */
+.photoCard {
+   width: 100%;
+   height: 230px;
+   position: relative;
+   color:#fff;
+   margin: 10px auto;
+   overflow: hidden;
+   border-radius: 0px;
+   box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+   text-align: center;
+   transition:all 0.4s;
+   background-size: 100%;
+ }
+
+ .photoCard a{ 
+ color:#fff;
+   text-decoration:none;
+   transition:all 0.2s
+ }
+ .photoCard .photoCardColorOverlay {
+   background: rgba(64, 84, 94, 0.133);
+   width: 100%;
+   height: 248px;
+   position: absolute;
+   z-index: 10;
+   top: 0;
+   left: 0;
+   transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
+ }
+ .photoCard .photoCardGradientOverlay {  
+   background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+   width: 100%;
+   height: 248px;
+   position: absolute;
+   top: 350px;
+   left: 0;
+   z-index: 15;
+ }
+ .photoCard:hover{
+     box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
+ }
+ .photoCard:hover .photoCardInfo {
+   opacity: 1;
+   bottom: 100px;
+ }
+ .photoCard:hover .photoCardColorOverlay {
+   background: #6bd42518;
+ }
+ 
+ 
+ .photoCard:hover h3:after{
+  
+   animation: changeLetter 0.3s 1 linear;
+   width:80%
+ }
+ 
+ .photoCard h3,h1 {
+   font-size: 1.9em;
+   font-weight: 400;
+   letter-spacing: 1px;
+   font-family: 'Abril Fatface', serif;
+   margin-bottom: 0;
+   display:inline-block;
+ }
+ .photoCard h3 a{  
+   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
+   transition:all 0.2s
+ }
+ .photoCard h3 a:hover{
+   text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
+ }
+ h3:after {
+   content: " ";
+   display: block; 
+   width: 10%;
+   height: 2px;
+   margin: 20px auto;
+   border: 0;
+   background: #BDA26B;
+   transition:all 0.2s
+ }
+ 
+ @keyframes changeLetter {
+   0% {
+     width: 10%;
+   }
+   100% {
+     width: 80%;
+   }
+ }
+ 
+ .intro {
+   width: 170px;
+   margin: 0 auto;
+   color: #ddd;
+   font-style: italic;
+   line-height: 18px;
+ }
+ .intro a{
+   color: #ddd
+ }
+ .intro a:hover{
+   text-decoration:underline
+ }
+ .photoCardInfo {
+   box-sizing: border-box;
+   font-family: var(--nav-font);
+   background-color: #111d0b77;
+   width: 100%;
+   position: absolute;
+   bottom: -40px;
+   left: 0;
+   margin: 0 auto;
+   padding: 10px;
+   font-style: 16px;
+   line-height: 24px;
+   z-index: 20;
+   opacity: 0;
+   transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
+ }
+
+ .photoCardInfoTitle{
+   font-weight: var(--font-bold);
+   padding-bottom: 10px;
+   font-size: 2rem;
+ }
+ 
+ .photoCardUtilityInfo {
+   font-family: var(--nav-font);
+   position: absolute;
+   bottom: 0px;
+   left: 0;
+   z-index: 20;
+   width:100%;
+   text-align: left;
+ }
+ .photoCardUtilityInfo:after{
+   content:" ";
+   background-size: 30px auto;
+   display:block;
+   opacity: 0.4;
+   position:absolute;
+   bottom:25px;
+   right:15px;
+   width:30px;
+   height:15px
+ }
+ .photoCardUtilityInfo a:hover{
+   text-decoration:underline
+ }
+ .photoCardUtilityList {
+   list-style-type: none;
+   margin: 0;
+   padding: 5px;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.414)
+ }
+ .photoCardUtilityList li {
+   margin: 0 8px 0 0;
+   padding: 3px;
+   display: inline-block;
+   font-size: 0.8rem;
+ }
+
+ .photoCardIcons{
+   font-size: 1.1rem;
+   color: var(--first-color-green);
+   padding-right: 10px;
+ }
+
+ /* +================================+ Photo Card Style -end- +================================+ */
+
+
+/* +================================+ Footer Section -start- +================================+ */
+.footerBackground{
+   background-image: url("../images/camerabackground1.jpg");
+    height: 100vh;
+    overflow: hidden;
+    background-size: cover;
+}
+
+.footerContainer{
+   padding-top: 150px;
+   margin: auto;
+   width: 80%;
+   text-align: center;
+}
+
+.footerLine{
+   width: 15%;
+   margin: auto;
+   border: 2px solid var(--first-color-green);
+   border-radius: 2px;
+}
+
+.footerTitle{
+   width: 100%;
+}
+
+.footerNameTitle{
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   padding-bottom: 40px;
+   margin: auto;
+   font-family: var(--body-font);
+   font-size: 3.9rem;
+   color: var(--text-color);
+}
+
+.footerDescription{
+   font-family: var(--nav-font);
+   font-weight: var(--font-semi-bold);
+   font-size: 1.1rem;
+   color: var(--text-color);
+   background-color: #111d0baa;
+   border-right: 4px solid var(--first-color-green);
+   border-left: 4px solid var(--first-color-green);
+   width: 450px;
+   padding: 10px;
+   margin: auto;
+}
+
+.footerButtons{
+   padding: 50px;
+   width: 100%;
+   text-align: center;
+   margin: auto;
+}
+
+.footerButton{
+   margin: auto;
+   padding: 10px 50px 10px 50px;
+   text-decoration: none;
+   border: 1px solid var(--text-color);
+   color: var(--text-color);
+   font-family: var(--nav-font);
+   font-size: 1.4rem;
+}
+
+.footerButton:hover{
+   border: 1px solid var(--first-color-green);
+   color: var(--first-color-green);
+   box-shadow: var(--first-color-green) 0px 0px 5px 0px;
+}
+
+.footerCopyrights{
+   font-family: var(--nav-font);
+   font: 1rem;
+   font-weight: var(--font-semi-bold);
+   color: var(--text-color);
+}
+
+
+/* +================================+ Footer Section -end- +================================+ */
+
+
+/* +======+ MEDIA QUERIES - START - +======+ */
+
+/* -v- Mobile Version -v- */
+@media screen and (max-width: 767px) {
+
+    .navBtn{
+        padding: 10px 90px;
+        font-size: 1.1rem; 
+    }
+
+    .navBarLogo{
+        padding-left: 10px;
+        width: 220px;
+    }
+  
+    .navBarList{
+      margin: auto;
+      width: 100%;
+      height: 320px;
+    }
+
+    .navBarLinkList{
+        margin: auto;
+        width: 100%;
+        height: 400px;
+      }
+   
+      /* +======+ Home Section -start- +======+ */
+    
+     .homeContainer{
+        padding-top: 100px;
+     }
+
+     .homeTitle{
+        width: 100%;
+     }
+    
+     .homeNameTitle{
+        font-size: 3rem;
+        color: var(--first-color-green);
+     }
+    
+     .homeSubtitle{
+        font-size: 2rem;
+        color: var(--text-color);
+     }
+    
+     .homeDescription{
+        font-size: 1.1rem;
+        width: 230px;
+     }
+
+     /* +===+ Welcome Page -start- +===+ */
+     .welcomeContainer{
+        padding-top: 130px;
+     }
+    
+     .welcomeColorLine{
+        width: 35%;
+     }
+    
+     .welcomeTitle{
+        width: 100%;
+        padding: 5px;
+        font-size: 2.5rem;
+     }
+    
+     .welcomeDescriptionInfo{
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+    
+     .welcomeButton{
+        padding: 40px;
+     }
+    
+     .welcomeReadMore{
+        margin: auto;
+        padding: 10px 40px 10px 40px;
+        font-size: .7rem;
+     }
+     /* +===+ Welcome Page -end- +===+ */
+     
+     /* +===+ Gallery Page -start- +===+ */
+     .galleryCard{
+      padding-top: 80px;
+      font-size: 1rem;
+      height: 300px;
+     }
+
+     .galleryCard:hover{
+      font-size: 1.3rem;
+     }
+
+     .galleryTitles{
+      border-top: 3px solid var(--first-color-green);
+      border-bottom: 3px solid var(--first-color-green);
+      border-radius: 2px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 58%;
+     }
+
+     /* +===+ Gallery Page -end- +===+ */
+
+     /* +===+ Contact Page -start- +===+ */
+     .contactLine{
+      border: 2px solid var(--first-color-green);
+      width: 40%;
+     }
+
+     .contactTitle{
+      font-size: 2.2rem;
+     }
+
+     .contactFormInput{
+      width: 99%;
+      padding: 8px;
+      margin-top: 25px;
+     }
+
+     .contactButton{
+      padding: 20px;
+     }
+   
+     .contactFormButton{
+      padding: 10px 20px 10px 20px;
+      font-size: 1rem;
+     }
+
+
+     /* +===+ Contact Page -end- +===+ */
+
+     /* +======+ Home Section -end- +======+ */
+
+     /* +======+ About Section -start- +======+ */
+
+     .aboutTitle{
+      padding-top: 10px;
+     }
+   
+     .aboutLine{
+      width: 25%;
+     }
+   
+     .aboutNameTitle{
+      font-size: 2.5rem;
+     }
+
+     .aboutDescription{
+      display: inline-block;
+     }
+
+     .aboutImageOne{
+      width: 65%;
+      margin-left: 18%;
+     }
+   
+     .aboutDescriptionInfo{
+      width: 100%;
+      font-size: .9rem;
+      margin-top: 1%;
+      padding: 20px;
+     }
+
+
+     .statsList{
+      display: inline-block;
+     }
+   
+     .statsCard{
+      margin: auto auto 40px auto;
+      width: 65%;
+     }
+   
+     .statsIcons{
+      font-size: 3rem;
+     }
+   
+     .statsCardTitle{
+      width: 100%;
+      font-size: 1.1rem;
+      margin-bottom: 5%;
+     }
+
+     .equipmentsImageOne{
+      width: 70%;
+     }
+
+     .equipmentsDescriptionInfo{
+      width: 90%;
+      padding: 5px;
+      text-align: center;
+      font-size: .9rem;
+     }
+      
+     .equipmentsTools{
+      display: inline-block;
+     }
+
+     .equipmentsToolDescription{
+      font-size: 0.9rem;
+     }
+
+     /* +======+ About Section -end- +======+ */
+
+     /* +======+ Gallery Section -start- +======+ */
+
+     .gallerySectionTitleInfo{
+      font-size: 1.4rem;
+      padding: 30px;
+      letter-spacing: 3px;
+     }
+
+     .gallerySectionNavBar{
+      padding: 10px;
+     }
+
+     .gallerySpanDot{
+      color: transparent;
+      padding: 0;
+     }
+
+     .photoCard {
+      width: 100%;
+      height: 140px;
+      background-repeat: no-repeat;
+    }
+
+    .photoCardUtilityList {
+      margin: 0;
+      padding: 1px;
+      width: 100%;
+    }
+
+    .photoCardUtilityList li {
+      margin: 0 2px 0 0;
+      padding: 1px;
+      display: inline-block;
+      font-size: 0.6rem;
+    }
+
+    .photoCardInfo {
+      margin: -20px auto;
+      padding: 5px;
+      line-height: 18px;
+    }
+
+    .photoCardInfoTitle{
+      padding-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .photoCardInfoDes {
+      font-size: 0.7rem;
+    }
+
+     /* +======+ Gallery Section -end- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+     .footerLine{
+      width: 35%;
+     }
+
+     .footerNameTitle{
+      padding-bottom: 40px;
+      font-size: 3rem;
+     }
+
+     .footerDescription{
+      font-size: 1.1rem;
+      width: 230px;
+     }
+
+     .footerButtons{
+      padding: 30px;
+      width: 100%;
+     }
+   
+   .footerButton{
+      padding: 10px 30px 10px 30px;
+      font-size: 1.1rem;
+     }
+
+     /* +======+ Footer Section -end- +======+ */
+
+  }
+  
+  /* -v- Tablet Version -v- */
+  @media screen and (min-width: 768px){
+
+    .navbarDiv{
+       width: 100%;
+    }
+
+    .navBarLogo{
+        width: 200px;
+    }
+
+    .navBtn{
+        padding: 10px 230px; 
+    }
+  
+    .navBarList{
+      width: 100%;
+      height: 330px;
+    }
+
+    .navBarLinkList{
+        width: 100%;
+        height: 400px;
+    }
+
+    /* +======+ Home Section -start- +======+ */
+    
+    .homeContainer{
+        padding-top: 100px;
+     }
+
+     .homeTitle{
+        width: 100%;
+     }
+    
+     .homeNameTitle{
+        font-size: 4.5rem;
+        color: var(--first-color-green);
+     }
+    
+     .homeSubtitle{
+        font-size: 2.5rem;
+        color: var(--text-color);
+     }
+    
+     .homeDescription{
+        font-size: 1.2rem;
+        width: 440px;
+     }
+     /* +===+ Welcome Page -start- +===+ */
+     .welcomeContainer{
+        padding-top: 150px;
+     }
+    
+     .welcomeColorLine{
+        width: 20%;
+     }
+    
+     .welcomeTitle{
+        width: 100%;
+        padding: 5px;
+        font-size: 2.5rem;
+     }
+    
+     .welcomeDescriptionInfo{
+        padding-left: 10px;
+        padding-right: 10px;
+     }
+    
+     .welcomeButton{
+        padding: 40px;
+     }
+    
+     .welcomeReadMore{
+        margin: auto;
+        padding: 10px 40px 10px 40px;
+        font-size: 1.1rem;
+     }
+     /* +===+ Welcome Page -end- +===+ */
+
+     /* +===+ Gallery Page -start- +===+ */
+     .galleryCard{
+      padding-top: 100px;
+      font-size: 2.4rem;
+      height: 400px;
+     }
+
+     .galleryCard:hover{
+      font-size: 2.7rem;
+     }
+
+     .galleryTitles{
+      border-top: 3px solid var(--first-color-green);
+      border-bottom: 3px solid var(--first-color-green);
+      border-radius: 2px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 68%;
+     }
+
+     /* +===+ Gallery Page -end- +===+ */
+
+     /* +===+ Contact Page -start- +===+ */
+
+     .contactTitle{
+      font-size: 3.5rem;
+     }
+
+     .contactLine{
+      width: 20%;
+     }
+
+     /* +===+ Contact Page -end- +===+ */
+
+     /* +======+ Home Section -end- +======+ */
+
+     /* +======+ About Section -start- +======+ */
+
+     .aboutTitle{
+      padding-top: 10px;
+     }
+   
+     .aboutLine{
+      width: 10%;
+     }
+   
+     .aboutNameTitle{
+      font-size: 2.8rem;
+     }
+
+     .aboutDescription{
+      display: inline-block;
+     }
+
+     .aboutImageOne{
+      width: 45%;
+      margin-left: 27%;
+     }
+   
+     .aboutDescriptionInfo{
+      width: 100%;
+      font-size: 1.1rem;
+      margin-top: 1%;
+      padding: 40px;
+     }
+
+
+     .statsList{
+      display: inline-block;
+     }
+   
+     .statsCard{
+      width: 35%;
+      margin: auto auto 40px auto;
+     }
+   
+     .statsIcons{
+      font-size: 2.6rem;
+     }
+   
+     .statsCardTitle{
+      width: 100%;
+      font-size: 1rem;
+      margin-bottom: 5%;
+     }
+
+     .equipmentsDescriptionInfo{
+      width: 70%;
+      text-align: center;
+     }
+
+     /* +======+ About Section -end- +======+ */
+
+     /* +======+ Gallery Section -start- +======+ */
+
+     .gallerySectionTitleInfo{
+      font-size: 2rem;
+      padding: 30px;
+      letter-spacing: 3px;
+     }
+
+     .gallerySectionNavBar{
+      padding: 15px;
+     }
+
+     .gallerySpanDot{
+      color: transparent;
+      padding: 0;
+     }
+
+     .photoCard {
+      width: 220px;
+      height: 125px;
+      background-repeat: no-repeat;
+    }
+
+    .photoCardUtilityList {
+      margin: 0;
+      padding: 1px;
+      width: 100%;
+    }
+
+    .photoCardUtilityList li {
+      margin: 0 2px 0 0;
+      padding: 1px;
+      display: inline-block;
+      font-size: 0.5rem;
+    }
+
+    .photoCardInfo {
+      margin: -50px auto;
+      padding: 5px;
+      line-height: 18px;
+    }
+
+    .photoCardInfoTitle{
+      padding-bottom: 5px;
+      font-size: 1rem;
+    }
+
+    .photoCardInfoDes {
+      font-size: 0.7rem;
+    }
+
+     /* +======+ Gallery Section -end- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+  }
+
+
+  /* -v- --- Laptop Version --- -v- */
+  @media screen and (min-width: 1024px) {
+    
+    .navbarDiv{
+        width: 100%;
+    }
+
+    .navBarLogo{
+        width: 200px;
+    }
+    
+    .navBtn{
+        position: relative;
+        display: inline-block;
+        color: var(--text-color);
+        font-size: 0.8rem;
+        letter-spacing: .1em;
+        text-decoration: none;
+        padding: 10px 25px;
+        transition: .5s;
+        transition-delay: .8s;
+    }
+
+    .navBarList{
+        width: 100%;
+        height: 70px;
+    }
+    
+    .navBarLinkList{
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+    /* +======+ Home Section -start- +======+ */
+    .homeContainer{
+        padding-top: 100px;
+     }
+
+     .homeTitle{
+        width: 80%;
+     }
+    
+     .homeNameTitle{
+        font-size: 4.5rem;
+        color: var(--first-color-green);
+     }
+    
+     .homeSubtitle{
+        font-size: 2.5rem;
+        color: var(--text-color);
+     }
+    
+     .homeDescription{
+        font-size: 1rem;
+        width: 44%;
+     }
+    /* +===+ Welcome Page -start- +===+ */
+    .welcomeContainer{
+        padding-top: 140px;
+     }
+    
+     .welcomeColorLine{
+        width: 18%;
+     }
+    
+     .welcomeTitle{
+        width: 100%;
+        padding: 20px;
+        font-size: 3rem;
+     }
+    
+     .welcomeDescriptionInfo{
+        padding-left: 50px;
+        padding-right: 50px;
+     }
+    
+     .welcomeButton{
+        padding: 40px 50px 30px 50px;
+     }
+    
+     .welcomeReadMore{
+        padding: 10px 50px 10px 50px;
+        font-size: 1.1rem;
+     }
+     /* +===+ Welcome Page -end- +===+ */
+
+     /* +===+ Gallery Page -start- +===+ */
+     .galleryCard{
+      font-size: 3rem;
+     }
+
+     .galleryCard:hover{
+      font-size: 3.3rem;
+     }
+     /* +===+ Gallery Page -end- +===+ */
+
+     /* +===+ Contact Page -start- +===+ */
+
+     /* +===+ Contact Page -end- +===+ */
+   
+     /* +======+ Home Section -end- +======+ */
+
+     /* +======+ About Section -start- +======+ */
+
+     .aboutTitle{
+      padding-top: 20px;
+     }
+   
+     .aboutLine{
+      width: 10%;
+     }
+   
+     .aboutNameTitle{
+      font-size: 3rem;
+     }
+
+     .aboutDescription{
+      display: inline-flex;
+     }
+
+     .aboutImageOne{
+      width: 35%;
+      margin-left: 10%;
+     }
+   
+     .aboutDescriptionInfo{
+      width: 100%;
+      font-size: .9rem;
+      margin-top: 1%;
+      padding: 30px;
+     }
+
+
+     .statsList{
+      display: inline-flex;
+     }
+   
+     .statsCard{
+      width: 20%;
+     }
+   
+     .statsIcons{
+      font-size: 3rem;
+     }
+   
+     .statsCardTitle{
+      width: 100%;
+      font-size: 1.1rem;
+      margin-bottom: 5%;
+     }
+
+     /* +======+ About Section -end- +======+ */
+
+
+     /* +======+ Footer Section -start- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+
+  }
+
+  /* -v- Desktop Version -v- */
+  @media screen and (min-width: 1440px) {
+    
+    .navbarDiv{
+        width: 100%;
+    }
+
+    .navBarLogo{
+        width: 200px;
+    }
+    
+    .navBtn{
+        position: relative;
+        display: inline-block;
+        color: var(--text-color);
+        font-size: 1rem;
+        letter-spacing: .1em;
+        text-decoration: none;
+        padding: 10px 25px;
+        transition: .5s;
+        transition-delay: .8s;
+    }
+
+    .navBarList{
+        width: 100%;
+        height: 70px;
+    }
+    
+    .navBarLinkList{
+        align-items: center;
+        width: 100%;
+        height: 60px;
+    }
+    /* +======+ Home Section -start- +======+ */
+    .homeContainer{
+        padding-top: 100px;
+     }
+
+     .homeTitle{
+        width: 50%;
+     }
+    
+     .homeNameTitle{
+        font-size: 4.5rem;
+        color: var(--first-color-green);
+     }
+    
+     .homeSubtitle{
+        font-size: 2.5rem;
+        color: var(--text-color);
+     }
+    
+     .homeDescription{
+        font-size: 1.2rem;
+        width: 440px;
+     }
+    /* +===+ Welcome Page -start- +===+ */
+    .welcomeContainer{
+        padding-top: 190px;
+     }
+    
+     .welcomeColorLine{
+        width: 10%;
+     }
+    
+     .welcomeTitle{
+        width: 100%;
+        padding: 20px;
+        font-size: 3rem;
+     }
+    
+     .welcomeDescriptionInfo{
+        padding-left: 230px;
+        padding-right: 230px;
+     }
+    
+     .welcomeButton{
+        padding: 50px 50px 30px 50px;
+     }
+    
+     .welcomeReadMore{
+        margin: auto;
+        padding: 10px 50px 10px 50px;
+        font-size: 1.3rem;
+     }
+     /* +===+ Welcome Page -end- +===+ */
+
+     /* +===+ Gallery Page -start- +===+ */
+     .galleryCard{
+      padding-top: 80px;
+      font-size: 4rem;
+      height: 500px;
+     }
+
+     .galleryCard:hover{
+      font-size: 4.3rem;
+     }
+
+     .galleryTitles{
+      border-top: 5px solid var(--first-color-green);
+      border-bottom: 5px solid var(--first-color-green);
+      border-radius: 3px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      width: 58%;
+     }
+
+     /* +===+ Gallery Page -end- +===+ */
+
+     /* +===+ Contact Page -start- +===+ */
+
+     /* +===+ Contact Page -end- +===+ */
+
+     /* +======+ Home Section -end- +======+ */
+
+     /* +======+ About Section -start- +======+ */
+
+     .aboutTitle{
+      padding-top: 70px;
+     }
+   
+     .aboutLine{
+      width: 7%;
+     }
+   
+     .aboutNameTitle{
+      font-size: 3.5rem;
+     }
+
+     .aboutDescription{
+      display: inline-flex;
+     }
+
+     .aboutImageOne{
+      width: 35%;
+      margin-left: 7%;
+     }
+   
+     .aboutDescriptionInfo{
+      width: 100%;
+      font-size: 1.1rem;
+      margin-top: 1%;
+      padding: 40px;
+     }
+
+
+     .statsList{
+      display: inline-flex;
+     }
+   
+     .statsCard{
+      padding-top: 30px;
+      width: 17%;
+      margin: auto;
+     }
+   
+     .statsIcons{
+      font-size: 3.5rem;
+     }
+   
+     .statsCardTitle{
+      width: 100%;
+      font-size: 1.3rem;
+      margin-bottom: 5%;
+     }
+
+     /* +======+ About Section -end- +======+ */
+
+     /* +======+ Gallery Section -start- +======+ */
+
+     .gallerySectionTitleInfo{
+      font-size: 3rem;
+      padding: 60px;
+      letter-spacing: 3px;
+     }
+
+     .gallerySectionNavBar{
+      padding: 10px;
+     }
+
+     .gallerySpanDot{
+      color: transparent;
+      padding: 0;
+     }
+
+     .photoCard {
+      width: 100%;
+      height: 240px;
+      background-repeat: no-repeat;
+    }
+
+    .photoCardUtilityList {
+      margin: 0;
+      padding: 1px;
+      width: 100%;
+    }
+
+    .photoCardUtilityList li {
+      margin: 0 2px 0 0;
+      padding: 10px;
+      display: inline-block;
+      font-size: 0.8rem;
+    }
+
+    .photoCardInfo {
+      margin: 0 auto;
+      padding: 5px;
+      line-height: 18px;
+    }
+
+    .photoCardInfoTitle{
+      padding-bottom: 14px;
+      font-size: 1.7rem;
+    }
+
+    .photoCardInfoDes {
+      font-size: 1rem;
+      padding: 5px;
+    }
+
+     /* +======+ Gallery Section -end- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+
+     /* +======+ Footer Section -start- +======+ */
+
+  }
+
+/* +======+ MEDIA QUERIES - END - +======+ */
