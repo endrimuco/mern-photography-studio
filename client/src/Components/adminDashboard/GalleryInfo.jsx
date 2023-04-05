@@ -14,7 +14,6 @@ const GalleryInfo = () => {
         const data = await axios.get("/photos");
         console.log(data)
         console.log(data.data.photosD)
-        // photoss termi i perdorur tek router qe te behet kalimi i info
         setPhotoss(data.data.photosD);
       } catch (error) {
         console.log(error);
@@ -39,7 +38,6 @@ const GalleryInfo = () => {
   return (
     <Container className="mt-1">
       <Row>
-        {/* shaqen vendet */}
         {photoss.map((photo, index) => {
           return (
             <Col xs={12} md={4} key={index}>

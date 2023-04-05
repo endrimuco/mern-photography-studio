@@ -8,6 +8,7 @@ import NavigateBar from "./Components/TopNavBar/NavigateBar"
 import Footer from './Components/Footer';
 import AdminDashboard from './Components/adminDashboard/Dashboard.jsx';
 import Login from './Components/Login.jsx';
+import UpdatePhoto from './Components/adminDashboard/updatePhoto';
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/loginasadmin" element={<Login />} />
+          <Route path="/update/:id" element={<UpdatePhoto />} />
           {/* {isAdminLoggedIn && (
             <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} />
 

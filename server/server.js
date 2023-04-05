@@ -26,9 +26,7 @@ app.use(
   })
 );
 
-// njohja e materialeve statike - imazheve
 app.use(express.static("images"));
-// limit i file-ve te upload-ur
 app.use(express.json({ limit: "1000mb", extended: true }));
 app.use(
   express.urlencoded({ limit: "1000mb", extended: true, parameterLimit: 500000 })
@@ -47,8 +45,6 @@ mongoose.connect(process.env.MONGODB_URL, {
   useUnifiedTopology: true,
 }).then(() => {
   console.log('Successfully connected to MongoDB.');
-  // Create initial admin account
-  // Admin.createInitialAdmin();
 }).catch((error) => {
   console.error('Error connecting to MongoDB:', error);
 });
