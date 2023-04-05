@@ -34,41 +34,12 @@ const Gallery = () => {
       <div className='gallerySection'>
 
         <div className='gallerySectionNavBar'>
-          <Link className="navBtn" to="/">All
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-          </Link>
-          <span className='gallerySpanDot'>.</span>
-          <Link className="navBtn" to="/about">Wedding
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-          </Link>
-          <span className='gallerySpanDot'>.</span>
-          <Link className="navBtn" to="/gallery">Seasons
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-          </Link>
-          <span className='gallerySpanDot'>.</span>
-          <Link className="navBtn" to="/contact">Our Workshop
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-            <span className='navBtnSpan'></span>
-          </Link>
+
+        <div class="searchBox">
+          <button class="searchBtn"><i class="ri-search-line"></i></button>
+          <input type="text" class="searchInput" placeholder="Type to Search..."/>
+        </div>
+        
         </div>
 
         <div className='gallerySectionList'>
