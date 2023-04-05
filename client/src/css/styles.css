@@ -700,7 +700,9 @@
    width: 21%;
    margin: auto;
    padding: 20px;
-   border: 2px solid var(--first-color-green);
+   border-top: 1px solid var(--first-color-green);
+   border-right: 1px solid var(--first-color-green);
+   border-left: 1px solid var(--first-color-green);
   }
 
   .gallerySectionList{
@@ -1339,7 +1341,28 @@
       letter-spacing: 3px;
      }
 
+     .gallerySectionNavBar{
+      width: 70%;
+      padding: 10px;
+     }
 
+     .searchBtn{
+       width: 50px;
+       height: 40px;
+     }
+
+     .searchInput{
+      width: 40px;
+      height: 40px;
+    }
+
+    .searchBtn:focus ~ .searchInput {
+      width: 200px;
+    }
+
+    .searchInput:focus{
+      width: 200px;
+    }
 
      .gallerySpanDot{
       color: transparent;
@@ -1593,8 +1616,27 @@
      }
 
      .gallerySectionNavBar{
-      padding: 15px;
+      width: 40%;
+      padding: 10px;
      }
+
+     .searchBtn{
+       width: 50px;
+       height: 50px;
+     }
+
+     .searchInput{
+      width: 50px;
+      height: 50px;
+    }
+
+    .searchBtn:focus ~ .searchInput {
+      width: 280px;
+    }
+
+    .searchInput:focus{
+      width: 280px;
+    }
 
      .gallerySpanDot{
       color: transparent;
@@ -1796,6 +1838,33 @@
 
      /* +======+ About Section -end- +======+ */
 
+     /* +======+ Gallery Section -start- +======+ */
+
+     .gallerySectionNavBar{
+      width: 30%;
+      padding: 10px;
+     }
+
+     .searchBtn{
+       width: 50px;
+       height: 50px;
+     }
+
+     .searchInput{
+      width: 50px;
+      height: 50px;
+    }
+
+    .searchBtn:focus ~ .searchInput {
+      width: 280px;
+    }
+
+    .searchInput:focus{
+      width: 280px;
+    }
+
+    /* +======+ Gallery Section -end- +======+ */
+
 
      /* +======+ Footer Section -start- +======+ */
 
@@ -1980,8 +2049,27 @@
      }
 
      .gallerySectionNavBar{
+      width: 20%;
       padding: 10px;
      }
+
+     .searchBtn{
+       width: 50px;
+       height: 50px;
+     }
+
+     .searchInput{
+      width: 50px;
+      height: 50px;
+    }
+
+    .searchBtn:focus ~ .searchInput {
+      width: 280px;
+    }
+
+    .searchInput:focus{
+      width: 280px;
+    }
 
      .gallerySpanDot{
       color: transparent;
