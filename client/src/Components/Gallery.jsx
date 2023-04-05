@@ -4,6 +4,7 @@ import { Button, Container, Row, Col, Card } from "react-bootstrap";
 import axios from "axios"
 const Gallery = () => {
   const [photoss, setPhotoss] = useState([]);
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -11,7 +12,7 @@ const Gallery = () => {
         const data = await axios.get("/photos");
         console.log(data)
         console.log(data.data.photosD)
-        // photoss termi i perdorur tek router qe te behet kalimi i info
+
         setPhotoss(data.data.photosD);
       } catch (error) {
         console.log(error);
@@ -37,7 +38,7 @@ const Gallery = () => {
 
         <div class="searchBox">
           <button class="searchBtn"><i class="ri-search-line"></i></button>
-          <input type="text" class="searchInput" placeholder="Type to Search..."/>
+          <input type="text" class="searchInput" onChange={(e) => setSearch(e.target.value)} placeholder="Type to Search..."/>
         </div>
         
         </div>
@@ -45,8 +46,12 @@ const Gallery = () => {
         <div className='gallerySectionList'>
 
         <Row>
-        {/* shaqen vendet */}
-        {photoss.map((photo, index) => {
+        
+        {photoss.filter((photo) => {
+          return search.toLowerCase() === '' 
+          ? photo : 
+          photo.category.toLowerCase().includes(search);
+        }).map((photo, index) => {
           return (
             <Col xs={12} md={4} key={index}>
               <div className="photoCard" style={{backgroundImage: `url(${photo.imageUrl})`}}>
