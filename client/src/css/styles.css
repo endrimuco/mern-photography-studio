@@ -698,11 +698,9 @@
 
   .gallerySectionNavBar{
    width: 21%;
-   margin: auto;
+   margin: 10px auto;
    padding: 20px;
-   border-top: 1px solid var(--first-color-green);
-   border-right: 1px solid var(--first-color-green);
-   border-left: 1px solid var(--first-color-green);
+   border: 1px solid var(--first-color-green);
   }
 
   .gallerySectionList{
