@@ -38,7 +38,7 @@ const Gallery = () => {
 
         <div class="searchBox">
           <button class="searchBtn"><i class="ri-search-line"></i></button>
-          <input type="text" class="searchInput" onChange={(e) => setSearch(e.target.value)} placeholder="Type to Search..."/>
+          <input type="text" class="searchInput" onChange={(e) => setSearch(e.target.value)} placeholder="Search by category"/>
         </div>
         
         </div>
