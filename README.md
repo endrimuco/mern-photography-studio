@@ -4,7 +4,7 @@ beta-testing
 currently beta testing.
 
 # Features to be added:
-- Filter for gallery section.
+- 
 
 # Errors to be fixed:
 
