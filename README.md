@@ -1,5 +1,5 @@
 # mern-photography-beta
-beta-testing
+Healthy Lens Photography Studio - Beta Version
 
 currently beta testing.
 
