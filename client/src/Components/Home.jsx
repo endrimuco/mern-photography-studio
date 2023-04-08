@@ -91,17 +91,17 @@ const Home = () => {
 
           <div className='galleryColumnOne'>
             
-            <a href="#" className='galleryCard galleryCardOne'><p className='galleryTitles'>Catalog Shoot</p></a>
+            <a href="/gallery" className='galleryCard galleryCardOne'><p className='galleryTitles'>Catalog Shoot</p></a>
 
-            <a href="#" className='galleryCard galleryCardTwo'><p className='galleryTitles'>Four Seasons</p></a>
+            <a href="/gallery" className='galleryCard galleryCardTwo'><p className='galleryTitles'>Four Seasons</p></a>
             
           </div>
 
           <div className='galleryColumnTwo'>
 
-              <a href="#" className='galleryCard galleryCardThree'><p className='galleryTitles'>Our Workshop</p></a>
+              <a href="/about" className='galleryCard galleryCardThree'><p className='galleryTitles'>Our Workshop</p></a>
 
-              <a href="#" className='galleryCard galleryCardFour'><p className='galleryTitles'>Wedding Album</p></a>
+              <a href="/gallery" className='galleryCard galleryCardFour'><p className='galleryTitles'>Wedding Album</p></a>
             
           </div>
         
