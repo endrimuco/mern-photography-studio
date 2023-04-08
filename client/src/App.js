@@ -13,7 +13,7 @@ import UpdatePhoto from './Components/adminDashboard/updatePhoto';
 
 function App() {
 
-  // const [isAdminLoggedIn] = useState(localStorage.getItem("loggedIn"));
+  const [isAdminLoggedIn] = useState(localStorage.getItem("loggedIn"));
 
   return (
     <>
@@ -26,11 +26,11 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/loginasadmin" element={<Login />} />
           <Route path="/update/:id" element={<UpdatePhoto />} />
-          {/* {isAdminLoggedIn && (
+          {isAdminLoggedIn && (
             <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} />
 
-          )} */}
-          <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} />
+          )}
+          {/* <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} /> */}
         </Routes>
       </header>
 

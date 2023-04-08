@@ -11,9 +11,10 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
 
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(localStorage.getItem("loggedIn"));
-  
+
   useEffect(() => {
     setIsAdminLoggedIn(localStorage.getItem("loggedIn"));
+
   }, []);
 
   const handleLogout = () => {
