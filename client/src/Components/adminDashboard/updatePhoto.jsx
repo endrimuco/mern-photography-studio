@@ -69,8 +69,8 @@ const UpdatePhoto = () => {
       });
   };
 
-  // Function of creating a photo card.
-  const handleSubmit = (e) => {
+  // Function of updating a photo card.
+  const handleUpdate = (e) => {
     e.preventDefault();
     var newPhoto = {
       id: id,
@@ -166,7 +166,7 @@ const UpdatePhoto = () => {
             <input type="file" className="createPhotoInput" onChange={onFileChange} />
           </div>
 
-          <button className="createPhotoAddBtn" onClick={handleSubmit}>Add</button>
+          <button className="createPhotoAddBtn" onClick={handleUpdate}>Update</button>
 
         </div>
 
