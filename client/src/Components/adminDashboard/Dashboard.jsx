@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from 'react-router-dom';
 import './admin.css';
 import CreatePhoto from './createPhoto';
@@ -11,9 +11,14 @@ const AdminDashboard = () => {
   const navigate = useNavigate();
 
   const [isAdminLoggedIn, setIsAdminLoggedIn] = useState(localStorage.getItem("loggedIn"));
+  
+  useEffect(() => {
+    setIsAdminLoggedIn(localStorage.getItem("loggedIn"));
+  }, []);
 
   const handleLogout = () => {
     localStorage.removeItem("loggedIn");
+    setIsAdminLoggedIn(false);
   }
 
   const handleCreatePhotoClick = () => {
@@ -43,16 +48,11 @@ const AdminDashboard = () => {
           <Link className="adminBtn" onClick={handleGalleryInfoClick}>Gallery</Link>
         </div>
 
-        <div className='adminButtons'>
-          <Link className="adminBtn" onClick={handleLogout}>Logout</Link>
-        </div>
-
-        {isAdminLoggedIn &&
+               {isAdminLoggedIn &&
                   <div className='adminButtons'>
-                  <Link className="adminBtn" onClick={handleLogout}>Logout</Link>
+                  <Link className="adminBtn" to="/loginasadmin" onClick={handleLogout}>Logout</Link>
                 </div>
-          }
-
+                }
 
       </div>
 

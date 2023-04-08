@@ -19,7 +19,7 @@ const Login = () => {
     })
     .then(response => {
       document.cookie = `jwt=${response.data.token}`;
-      setLoggedIn(true); // Set loggedIn to true
+      localStorage.setItem("loggedIn", "true"); // Set the loggedIn item to true
       navigate("/loginasadmin/myadmin");
     })
     .catch(error => {
