@@ -67,11 +67,11 @@ const CreatePhoto = () => {
     <div className="createPhotoContainer">
 
 
-      <form className="createPhotoForm BBred">
+      <form className="createPhotoForm ">
 
-        <div className="createPhotoFormInputs BBred">
+        <div className="createPhotoFormInputs ">
 
-        <div className="createPhotoInputStyle BBred">
+        <div className="createPhotoInputStyle ">
             <p className="createPhotoFormTitles">Photo Title</p>
             <input
               type="text"
@@ -84,7 +84,7 @@ const CreatePhoto = () => {
 
           <div className="createPhotoRow">
 
-          <div className="createPhotoInputStyle createPhotoCol BBred">
+          <div className="createPhotoInputStyle createPhotoCol ">
             <p className="createPhotoFormTitles">Photo Location</p>
             <input
               type="text"
@@ -95,7 +95,7 @@ const CreatePhoto = () => {
             />
           </div>
 
-          <div className="createPhotoInputStyle createPhotoCol BBred">
+          <div className="createPhotoInputStyle createPhotoCol ">
             <p className="createPhotoFormTitles">Photo Date</p>
             <input
               type="date"
@@ -106,7 +106,7 @@ const CreatePhoto = () => {
             />
           </div>
 
-          <div className="createPhotoInputStyle createPhotoCol BBred">
+          <div className="createPhotoInputStyle createPhotoCol ">
             <p className="createPhotoFormTitles">Category</p>
             <select
               value={category}
@@ -142,7 +142,7 @@ const CreatePhoto = () => {
 
         </div>
 
-        <div className="createPhotoImageDiv BBred">
+        <div className="createPhotoImageDiv ">
 
           {selectedFile && selectedFile !== "" && (
             <img
