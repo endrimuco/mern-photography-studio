@@ -1,3 +1,3 @@
 # mern-photography-beta
-Healthy Lens Photography Studio - Beta Version
+Healthy Lens Photography Studio  v1.0.0
 
