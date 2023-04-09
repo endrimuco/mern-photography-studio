@@ -77,7 +77,7 @@ const UpdatePhoto = () => {
       id: id,
       title: photo,
       description: description,
-      image: selectedFile,
+      imageUrl: selectedFile,
       category: category,
       dateofphoto: dateofphoto,
       locationphoto: locationphoto,
@@ -85,7 +85,6 @@ const UpdatePhoto = () => {
     axios.post("/update", { newPhoto }).then((res) => {
       if (res.data.code === 200) {
         console.log('Updating..')
-        // navigate("/gallery");
       } else {
         alert("Photo hasn't been updated yet to DataBase.");
       }
@@ -93,7 +92,6 @@ const UpdatePhoto = () => {
     try {
       const response = await axios.put(`/photos/update/${id}`, newPhoto);
       setMyModel(response.data);
-      alert('Updated successfully!');
       navigate("/loginasadmin/myadmin")
     } catch (error) {
       console.error(error);

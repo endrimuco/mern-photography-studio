@@ -11,12 +11,16 @@ app.post("/", async (req, res) => {
   // Informations from input.
   const photoTitle = req.body.newPhoto.title;
   const photoDes = req.body.newPhoto.description;
+  const photoLoc = req.body.newPhoto.locationphoto;
+  const photoDate = req.body.newPhoto.dateofphoto;
   const photoCat = req.body.newPhoto.category;
   const photoImg = req.body.newPhoto.image;
   var photo = new photoModel(
     {
       title: photoTitle,
       description: photoDes,
+      locationphoto: photoLoc,
+      dateofphoto: photoDate,
       category: photoCat,
       imageUrl: photoImg
     });
@@ -27,18 +31,6 @@ app.post("/", async (req, res) => {
     console.log(err);
     res.status(500).send(err);
   })
-  // photo.save(function (error, photoCreated) {
-  //   if (error) return console.error(error);
-  //   try {
-
-  //     res.send({ code: 200, photo: photoCreated });
-
-  //   } catch (error) {
-
-  //     res.status(500).send(error);
-
-  //   }
-  // });
 });
 
 
@@ -78,25 +70,6 @@ app.put('/update/:id', async (req, res) => {
   }
 });
 
-// app.post("/update", async (req, res) => {
-// photoTitle = req.body.newPhoto.title;
-// photoDes = req.body.newPhoto.description;
-// photoCat = req.body.newPhoto.category;
-// photoImg = req.body.newPhoto.image;
-// photoModel.updateOne(
-//   { _id: req.body.newPhoto.id },
-//   { title: photoTitle, description: photoDes, category: photoCat, image: photoImg },
-//   function (err, vehicle) {
-//     if (err) return handleError(err);
-//     res.send({ code: 200, photo: photo });
-//   }
-// );
-//   } catch (error) {
-//     console.error(error);
-//     res.status(500).send('Server error');
-//   }
-// });
-
 // Updation of vehicle card.
 app.post("/update", async (req, res) => {
   const photoTitle = req.body.newPhoto.title;
@@ -113,7 +86,7 @@ app.post("/update", async (req, res) => {
       locationphoto: photoLoc,
       dateofphoto: photoDate,
       category: photoCat,
-      img: photoImg
+      imageUrl: photoImg
     }, { new: true });
 
     res.send({ code: 200, photo: updatedPhoto });
