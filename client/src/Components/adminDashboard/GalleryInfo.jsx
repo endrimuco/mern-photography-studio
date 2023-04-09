@@ -25,12 +25,10 @@ const GalleryInfo = () => {
 
   const handleDelete = (id) => {
 
-    axios.get(`/delete/${id}`).then((res) => {
+    axios.get(`/photos/delete/${id}`).then((res) => {
       if (res.data.code === 200) {
         var newPhotos = photoss.filter((ele) => ele._id !== id);
         setPhotoss(newPhotos);
-        window.alert("Deleted")
-        navigate("/loginsadmin/myadmin");
       } else {
         alert("Delete failed.");
       }
