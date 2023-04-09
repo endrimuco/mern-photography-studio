@@ -23,13 +23,13 @@ const UpdatePhoto = () => {
     }
     const fetchData = async () => {
         try {
-          const data = await axios.get(`/update/${id}`);
+          const data = await axios.get(`/photos/update/${id}`);
           if (data) {
             setPhoto(data.data.photo.title);
             setDescription(data.data.photo.description);
             setCategory(data.data.photo.category);
             setDateOfPhoto(data.data.photo.dateofphoto);
-            setLocationPhoto(data.data.photo.km);
+            setLocationPhoto(data.data.photo.locationphoto);
             setSelectedFile(data.data.photo.img)
           }
         } catch (error) {
@@ -82,13 +82,6 @@ const UpdatePhoto = () => {
       dateofphoto: dateofphoto,
       locationphoto: locationphoto,
     };
-    axios.post("/update", { newPhoto }).then((res) => {
-      if (res.data.code === 200) {
-        console.log('Updating..')
-      } else {
-        alert("Photo hasn't been updated yet to DataBase.");
-      }
-    });
     try {
       const response = await axios.put(`/photos/update/${id}`, newPhoto);
       setMyModel(response.data);
