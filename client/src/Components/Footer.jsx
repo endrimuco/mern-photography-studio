@@ -27,8 +27,8 @@ const Footer = () => {
       </div>
 
       <div className='footerButtons'>
-        <Link href="https://twitter.com/6kTsB5BpXiq6lyh" target='_blank' className='footerButton'>Facebook</Link>
-        <Link href="https://twitter.com/6kTsB5BpXiq6lyh" target='_blank' className='footerButton ms-3'>Twitter</Link>
+        <Link to="https://twitter.com/6kTsB5BpXiq6lyh" target='_blank' className='footerButton'>Facebook</Link>
+        <Link to="https://twitter.com/6kTsB5BpXiq6lyh" target='_blank' className='footerButton ms-3'>Twitter</Link>
       </div>
 
       <div className='footerCopyrights'>

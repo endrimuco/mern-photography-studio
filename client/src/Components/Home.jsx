@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const Home = () => {
@@ -78,7 +79,7 @@ const Home = () => {
         </div>
         
         <div className='welcomeButton'>
-        <a href="#" className='welcomeReadMore'>Read More</a>
+        <Link to="/about" className='welcomeReadMore'>Read More</Link>
         </div>
         
       </div>
