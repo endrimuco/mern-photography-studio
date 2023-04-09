@@ -4,11 +4,9 @@ import './admin.css';
 import CreatePhoto from './createPhoto';
 import GalleryInfo from './GalleryInfo';
 import { Link } from 'react-router-dom';
-import UpdatePhoto from "./updatePhoto";
 
 const AdminDashboard = () => {
   const [showCreatePhoto, setShowCreatePhoto] = useState(false);
-  const [showUpdatePhoto, setShowUpdatePhoto] = useState(false);
   const [showGalleryInfo, setGalleryInfo] = useState(false);
   const navigate = useNavigate();
 
@@ -32,12 +30,6 @@ const AdminDashboard = () => {
   const handleGalleryInfoClick = () => {
     setShowCreatePhoto(false);
     setGalleryInfo(true);
-  };
-
-  const handleUpdatePhotoClick = () => {
-    setShowCreatePhoto(false);
-    setGalleryInfo(false);
-    setShowUpdatePhoto(true);
   };
 
   return (
@@ -73,7 +65,6 @@ const AdminDashboard = () => {
         <div className='adminScreenShow'>
           {showCreatePhoto && <CreatePhoto />}
           {showGalleryInfo && <GalleryInfo />}
-          {showUpdatePhoto && <UpdatePhoto />}
         </div>
       </div>
     </div>

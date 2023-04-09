@@ -45,7 +45,7 @@ const GalleryInfo = () => {
                 <div className="photoCardInfo">
 
                <div className="adminUDBtns">
-                    <Link to={`/loginasadmin/myadmin/update/${photo._id}`}><i className="ri-edit-box-line adminUpdateBtn"></i></Link>
+                    <Link to={`/update/${photo._id}`}><i className="ri-edit-box-line adminUpdateBtn"></i></Link>
                     <button className="adminDeleteBtn" onClick={() => handleDelete(photo._id)}><i class="ri-close-circle-line"></i></button>
                </div>
 

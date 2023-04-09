@@ -1,7 +1,9 @@
 import axios from "axios";
 import React, { useState } from "react";
+import { useNavigate } from "react-router";
 
 const CreatePhoto = () => {
+  const navigate = useNavigate();
   const [photo, setPhoto] = useState("");
   const [description, setDescription] = useState("");
   const [selectedFile, setSelectedFile] = useState("");
@@ -54,7 +56,7 @@ const CreatePhoto = () => {
     axios.post("/photos", { newPhoto }).then((res) => {
       if (res.data.code === 200) {
         console.log('Posting..')
-        // navigate("/gallery");
+        navigate("/gallery")
       } else {
         alert("Photo hasn't been added to DataBase.");
       }
