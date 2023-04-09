@@ -22,17 +22,6 @@
     --first-color-green: #6bd425;
 }
 
-.Testing{
-   font-family: var(--body-font);
-   font-size: 30px;
-   background-color: black;
-   color: var(--text-color);  
-}
-
-.BBred{
-    border: 2px solid red;
-}
-
 /* +================================+ Navbar Section -start- +================================+ */
 .navbarDiv {
     font-family: 'Alata', sans-serif;
@@ -1410,11 +1399,11 @@
 
      .footerNameTitle{
       padding-bottom: 40px;
-      font-size: 3rem;
+      font-size: 2.5rem;
      }
 
      .footerDescription{
-      font-size: 1.1rem;
+      font-size: 1rem;
       width: 230px;
      }
 
@@ -1424,7 +1413,7 @@
      }
    
    .footerButton{
-      padding: 10px 30px 10px 30px;
+      padding: 5px 20px 5px 20px;
       font-size: 1.1rem;
      }
 
