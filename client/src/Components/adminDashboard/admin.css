@@ -127,6 +127,10 @@
     width: 100%;
 }
 
+.updateContainerColor{
+    background-color: var(--nav-color);
+}
+
 .createPhotoForm{
     display: inline-flex;
     width: 100%;
