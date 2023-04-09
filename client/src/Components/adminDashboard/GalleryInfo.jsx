@@ -29,6 +29,7 @@ const GalleryInfo = () => {
       if (res.data.code === 200) {
         var newPhotos = photoss.filter((ele) => ele._id !== id);
         setPhotoss(newPhotos);
+        window.alert("Deleted")
         navigate("/loginsadmin/myadmin");
       } else {
         alert("Delete failed.");
@@ -46,7 +47,7 @@ const GalleryInfo = () => {
                 <div className="photoCardInfo">
 
                <div className="adminUDBtns">
-                    <Link to={`/update/${photo._id}`}><i className="ri-edit-box-line adminUpdateBtn"></i></Link>
+                    <Link to={`/loginasadmin/myadmin/update/${photo._id}`}><i className="ri-edit-box-line adminUpdateBtn"></i></Link>
                     <button className="adminDeleteBtn" onClick={() => handleDelete(photo._id)}><i class="ri-close-circle-line"></i></button>
                </div>
 

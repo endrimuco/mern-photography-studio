@@ -6,6 +6,7 @@ import { useNavigate, useParams } from "react-router";
 const UpdatePhoto = () => {
   const navigate = useNavigate();
   const { id } = useParams();
+  const [myModel, setMyModel] = useState(null);
   const [photo, setPhoto] = useState("");
   const [description, setDescription] = useState("");
   const [selectedFile, setSelectedFile] = useState("");
@@ -70,7 +71,7 @@ const UpdatePhoto = () => {
   };
 
   // Function of updating a photo card.
-  const handleUpdate = (e) => {
+  async function handleUpdate(e) {
     e.preventDefault();
     var newPhoto = {
       id: id,
@@ -89,6 +90,15 @@ const UpdatePhoto = () => {
         alert("Photo hasn't been updated yet to DataBase.");
       }
     });
+    try {
+      const response = await axios.put(`/photos/update/${id}`, newPhoto);
+      setMyModel(response.data);
+      alert('Updated successfully!');
+      navigate("/loginasadmin/myadmin")
+    } catch (error) {
+      console.error(error);
+      alert('Error updating document');
+    }
   };
 
   return (

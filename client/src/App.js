@@ -25,7 +25,7 @@ function App() {
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/loginasadmin" element={<Login />} />
-          <Route path="/update/:id" element={<UpdatePhoto />} />
+          <Route path="/loginasadmin/myadmin/update/:id" element={<UpdatePhoto />} />
           {isAdminLoggedIn && (
             <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} />
 
