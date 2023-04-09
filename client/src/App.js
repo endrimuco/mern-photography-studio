@@ -30,7 +30,6 @@ function App() {
             <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} />
 
           )}
-          {/* <Route path="/loginasadmin/myadmin" element={<AdminDashboard />} /> */}
         </Routes>
       </header>
 
