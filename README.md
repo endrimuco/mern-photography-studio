@@ -3,7 +3,7 @@
   <br>
   <img src="https://i.imgur.com/BtbF9TD.png" alt="Healthy Lens Photography Studio" width="500">
   <br>
-  2Brothers Auto Dealership
+  Healthy Lens Photography Studio
   <br>
 </h1>
 
