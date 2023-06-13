@@ -1,6 +1,5 @@
-import { Link } from 'react-router-dom';
 import React, { useEffect, useState } from "react";
-import { Button, Container, Row, Col, Card } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import axios from "axios"
 const Gallery = () => {
   const [photoss, setPhotoss] = useState([]);

@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
-  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -19,7 +17,6 @@ const ContactForm = () => {
 
     try {
       await axios.post("/contact", newContact);
-      // navigate("/contact");
       alert("Message sent.");
     } catch (err) {
       alert("Message could not be sent. Please try again later.");
