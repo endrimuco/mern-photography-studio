@@ -3,11 +3,11 @@
   <br>
   <img src="https://i.imgur.com/BtbF9TD.png" alt="Healthy Lens Photography Studio" width="500">
   <br>
-  2Brothers Auto Dealership
+  Healthy Lens Photography Studio
   <br>
 </h1>
 
-<h4 align="center">Photography studio where user can check out the studo photos with their location, date, category.</h4>
+<h4 align="center">Photography studio where user can check out the studio photos with their location, date, category.</h4>
 
 
 <p align="center">
